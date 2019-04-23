@@ -1,0 +1,55 @@
+.host-view-block{
+  margin:6px 12px 0px 12px;
+  border:1px solid #606266;
+  box-shadow: 0 0 3px #606266;
+}
+.host-view-block-first{
+  margin:12px 12px 0px 12px;
+}
+.host-view-block-last{
+  margin:6px 12px 12px 12px;
+}
+
+.host-view-block-inline-left{
+  margin:6px 3px 0px 12px;
+  border:1px solid #606266;
+  box-shadow: 0 0 3px #606266;
+  vertical-align:top;
+}
+
+.host-view-block-inline-middle{
+  margin:6px 3px 0px 3px;
+  border:1px solid #606266;
+  box-shadow: 0 0 3px #606266;
+  vertical-align:top;
+}
+
+.host-view-block-inline-right{
+  margin:6px 12px 0px 3px;
+  border:1px solid #606266;
+  box-shadow: 0 0 3px #606266;
+  vertical-align:top;
+}
+
+.host-view-block-inline-bottom{
+  margin-bottom: 12px;
+}
+
+.host-view-block-header{
+  height:24px;
+  line-height:23px;
+  font-size:12px;
+  color:#C0C4CC;
+  border-bottom:1px solid #606266;
+  background-color:#3C3F41
+}
+
+
+
+
+//搜索过滤区域
+.filterArea-block{
+  display:inline-block;
+  vertical-align:top;
+}
+

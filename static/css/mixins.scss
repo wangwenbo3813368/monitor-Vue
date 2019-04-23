@@ -1,0 +1,137 @@
+//---------------------------------------------------------------------------------------
+$font-color-normal-black: #C0C4CC;               //普通字体颜色
+$font-color-special-black: #C0C4CC;              //特殊字体颜色
+$background-color-level01-black: #3C3F41;        //一级背景颜色
+$background-color-level02-black: #313335;        //二级背景颜色
+$background-color-level03-black: #2B2B2B;        //三级背景颜色
+$form-label-background-normal-black: #3C3F41;      //普通form表单label背景色     
+$form-label-background-special-black: black;     //特殊form表单label背景色     
+$form-content-background-normal-black: #313335;    //普通form表单内容背景色
+$form-content-background-special-black: black;   //特殊form表单内容背景色         
+$table-header-background-normal-black: #3C3F41;    //普通table头背景色    
+$table-header-background-special-black: black;   //特殊table头背景色  
+$table-body-background-normal-black: #313335;      //普通table体背景色    
+$table-body-background-special-black: black;      //特殊table体背景色  
+$table-body-background-hover-black: #2B2B2B;      //hover时table体背景色     
+
+
+$border-normal-black:1px solid #606266;
+$border-special-black:1px solid #606266;
+
+// $border-top-normal-black:1px solid #606266;
+// $border-top-special-black:1px solid #606266;
+// $border-right-normal-black:1px solid #606266;
+// $border-right-special-black:1px solid #606266;
+// $border-bottom-normal-black:1px solid #606266;
+// $border-bottom-special-black:1px solid #606266;
+// $border-left-normal-black:1px solid #606266;
+// $border-left-special-black:1px solid #606266;
+$box-shadow-normal-black: 0 0 3px #606266;
+$box-shadow-special-black: 10px 1px 15px rgba(0, 0, 0, 0.17);
+
+//---------------------------------------------------------------------------------------
+$font-color-normal-white: #2B2B2B;               //普通字体颜色
+$font-color-special-white: #2B2B2B;              //特殊字体颜色
+$background-color-level01-white: #EEEEEE;        //一级背景颜色
+$background-color-level02-white: #EEEEEE;        //二级背景颜色
+$background-color-level03-white: #C0C4CC;        //三级背景颜色
+$form-label-background-normal-white: #3C3F41;      //普通form表单label背景色     
+$form-label-background-special-white: white;     //特殊form表单label背景色     
+$form-content-background-normal-white: #313335;    //普通form表单内容背景色
+$form-content-background-special-white: white;   //特殊form表单内容背景色         
+$table-header-background-normal-white: #3C3F41;    //普通table头背景色    
+$table-header-background-special-white: white;   //特殊table头背景色  
+$table-body-background-normal-white: #313335;      //普通table体背景色    
+$table-body-background-special-white: white;      //特殊table体背景色  
+$table-body-background-hover-white: #2B2B2B;      //hover时table体背景色    
+
+$border-normal-white:1px solid #606266;
+$border-special-white:1px solid #606266;
+$box-shadow-normal-white: 0 0 3px #606266;
+$box-shadow-special-white: 10px 1px 15px rgba(0, 0, 0, 0.17);
+
+
+
+@mixin font_normal_color($color){
+    color:$color;
+    [data-theme="black"] & {
+      color:$font-color-normal-black;    
+    }
+    [data-theme="white"] & {
+        color:$font-color-normal-white;    
+      }
+}
+@mixin font_special_color($color){
+    color:$color;
+    [data-theme="black"] & {
+      color:$font-color-special-black;    
+    }
+    [data-theme="white"] & {
+        color:$font-color-special-white;    
+      }
+}
+
+@mixin background_level01_color($color){
+    background-color:$color; 
+    [data-theme="black"] & {
+        background-color:$background-color-level01-black;     
+    }
+    [data-theme="white"] & {
+        background-color:$background-color-level01-white;     
+    }
+}
+
+@mixin background_level02_color($color){
+    background-color:$color; 
+    [data-theme="black"] & {
+        background-color:$background-color-level02-black;     
+    }
+    [data-theme="white"] & {
+        background-color:$background-color-level02-white;     
+    }
+}
+
+@mixin background_level03_color($color){
+    background-color:$color; 
+    [data-theme="black"] & {
+        background-color:$background-color-level03-black;     
+    }
+    [data-theme="white"] & {
+        background-color:$background-color-level03-white;     
+    }
+}
+
+@mixin border_normal(){
+    [data-theme="black"] & {
+       border:$border-normal-black;    
+    }
+    [data-theme="white"] & {
+       border:$border-normal-white;    
+    }
+}
+
+@mixin border_special(){
+    [data-theme="black"] & {
+      border:$border-special-black;    
+    }
+    [data-theme="white"] & {
+       border:$border-special-white;    
+    }
+}
+
+@mixin box_shadow_normal(){
+    [data-theme="black"] & {
+        box-shadow:$box-shadow-normal-black;    
+    }
+    [data-theme="white"] & {
+        box-shadow:$box-shadow-normal-white;    
+    }
+}
+@mixin box_shadow_special(){
+    [data-theme="black"] & {
+        box-shadow:$box-shadow-special-black;    
+    }
+    [data-theme="white"] & {
+        box-shadow:$box-shadow-special-white;    
+    }
+}

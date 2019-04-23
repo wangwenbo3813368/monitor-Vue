@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>东浦运维监控平台</title>
+    <script>
+      (function (window) {
+        var theUA = window.navigator.userAgent.toLowerCase();
+        if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+          var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+          if (ieVersion < 9) {
+            window.location.href = "info/version.html"
+          };
+        }
+        window.document.documentElement.setAttribute("data-theme","black");
+      })(window);
+    </script>
+  </head>
+  <body style="overflow: hidden;">
+    <script src="./static/js/echarts-3.85-dev.js"></script>
+    <!-- <script src="./static/js/echarts-3.85-pro.js"></script> -->
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/china.js"> </script>
+    <!-- 后续多皮肤功能入口 -->
+    <div id="app" style="background: #313335;"></div>
+  </body>
+
+  <style>
+    .el-input__inner::-webkit-input-placeholder {
+      color: #606266 !important;
+      font-size: 13px !important;
+    }
+
+    .el-input__inner::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #606266 !important;
+      font-size: 13px !important;
+    }
+    .el-input__inner:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: #606266 !important;
+      font-size: 13px !important;
+    } 
+  </style>
+
+</html>

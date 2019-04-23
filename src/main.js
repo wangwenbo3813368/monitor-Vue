@@ -1,0 +1,28 @@
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import App from './App'//根组件
+import router from './router'//vue-router
+import store from "./store"//vuex
+import i18n from '@/i18n'
+import 'babel-polyfill'
+import './permissions'//全局路由钩子
+import '~/css/index.scss'//cms样式
+import '~/iconfont/iconfont.css'//iconfont网站选取的icon
+import global from "@/untils/global"//全局方法
+import dpComponents from "@/components/index";//全局自定义组件
+import '@/directive/index'
+Vue.use(dpComponents);
+Vue.use(ElementUI)
+
+Vue.config.productionTip = false
+Vue.use(global);
+new Vue({
+  router,
+  store,
+    i18n,
+  template: '<App/>',
+  components: { App }
+}).$mount('#app')

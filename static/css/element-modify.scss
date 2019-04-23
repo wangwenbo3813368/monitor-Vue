@@ -1,0 +1,176 @@
+//修改菜单 
+
+.child-padding >.el-submenu__title {
+    padding-left: 40px !important;
+    position: relative;
+   
+}
+.child-padding >.el-submenu__title .el-submenu__icon-arrow{
+      position: absolute;
+      top:19px;
+      right: 10px;
+}
+.el-submenu__icon-arrow{
+    right: 10px;
+  }
+.child-padding .el-menu-item{
+     padding-left: 60px !important;
+ }
+.el-menu-item{
+  min-width: 50px !important;
+}
+.el-menu{
+    transition: none !important;
+    border-right: none;
+}
+.el-menu-item{
+    transition: none !important;
+}
+.el-menu--collapse{
+    width: 36px !important;
+}
+.el-menu--collapse >.el-menu-item{
+    height: 36px !important;
+    line-height: 36px !important;
+    width:60px;
+}
+
+.el-menu--collapse>.el-submenu>.el-submenu__title {
+  padding:0px;
+  height: 36px !important;
+  line-height: 36px !important;
+}
+.el-menu--collapse .el-submenu{
+   width:60px;
+}
+.el-menu--collapse .el-submenu .el-menu{
+    border:none;
+    width:60px;
+}
+.el-menu--popup{
+  padding:0px;
+}
+.el-menu-item{
+  font-size:13px;
+}
+
+.el-menu-item,.el-submenu__title{
+    height: 36px !important;
+    line-height: 36px !important;
+}
+.el-submenu__title{
+  font-size: 13px;
+}
+
+
+//修改el-table
+ .el-table--border, .el-table--group {
+    border: 0px;
+  }
+  .el-table th, .el-table tr{
+    cursor: pointer;
+    background-color: #3C3F41;
+  }
+  .el-table__body-wrapper .el-table th, .el-table tr{
+    background-color: #303133;
+  }
+  
+  .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid #606266;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #606266;
+  }
+  .el-table th {
+    padding: 2px 0;
+    border-bottom: 1px solid #606266 !important;
+    font-size: 13px;
+    text-align: center;
+  }
+  .el-table td {
+    padding: 0px;
+    font-size: 12px;
+    color: #C0C4CC;
+    text-align: center;
+  }
+  .el-table--border::after, .el-table--group::after, .el-table::before {
+    background-color: #606266;
+  }
+  .el-table thead {
+    color: #DCDFE6;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #2B2B2B;
+  }
+  .el-table .caret-wrapper{
+    height:24px;
+  }
+  .el-table .sort-caret.ascending {
+    top: 0px;
+  }
+  .el-table .sort-caret.descending {
+    bottom: 0px;
+  }
+  .el-table__column-filter-trigger {
+    line-height: 24px;
+  }
+  .el-table__column-filter-trigger i{
+    color: #DCDFE6;
+  }
+  .el-table, .el-table__expanded-cell {
+    background-color: #313335;
+  }
+  
+  .el-table-filter {
+    background-color: #3C3F41;
+    border: 1px solid #606266;
+  }
+  .el-table-filter__bottom {
+    border-top: 1px solid #606266;
+  }
+  .el-checkbox {
+    color: #C0C4CC;
+  }    
+  .el-checkbox__label {
+    font-size: 12px;
+  }
+  .el-table-filter__bottom button {
+    color: #C0C4CC;
+  }
+  .el-table-filter__bottom button:disabled {
+    color: #606266;
+  }
+  .el-table__empty-block{
+    display:none;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-right: 1px solid #606266;
+  }
+  
+  //修改el-input
+  .el-input__inner::-webkit-input-placeholder {
+    color: #606266 !important;
+    font-size: 13px !important;
+  }
+  
+  .el-input__inner::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #606266 !important;
+    font-size: 13px !important;
+  }
+  .el-input__inner:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #606266 !important;
+    font-size: 13px !important;
+  } 
+  
+  .el-input__inner_border_0 .el-input__inner{
+    border: 0px solid #DCDFE6 !important;
+  }
+  
+  
+  //el-tree样式修改
+  .el-tree {
+    position: relative;
+    cursor: default;
+    background: none;
+    color: #C0C4CC;
+  }
